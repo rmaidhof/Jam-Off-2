@@ -93,17 +93,11 @@ public class HealthManager : MonoBehaviour
     {
         if (invincibilityCounter <= 0)
         {
-
-
             currentHealth -= damage;
-
-            
-
             if (currentHealth < 0)
             {
                 currentHealth = 0;
             }
-
             if (currentHealth == 0)
             {
                 Respawn();
@@ -111,19 +105,35 @@ public class HealthManager : MonoBehaviour
             else
             {
                 thePlayer.KnockBack(direction);
-
-
                 invincibilityCounter = invincibilityLength;
-
                 playerRenderer.enabled = false;
-
                 flashCounter = flashLength;
             }
-
             healthText.text = "Health: " + currentHealth + "/" + maxHealth;
-            
         }
-        
+    }
+
+    public void HurtPlayer(int damage)
+    {
+        if (invincibilityCounter <= 0)
+        {
+            currentHealth -= damage;
+            if (currentHealth < 0)
+            {
+                currentHealth = 0;
+            }
+            if (currentHealth == 0)
+            {
+                Respawn();
+            }
+            else
+            {
+                invincibilityCounter = invincibilityLength;
+                playerRenderer.enabled = false;
+                flashCounter = flashLength;
+            }
+            healthText.text = "Health: " + currentHealth + "/" + maxHealth;
+        }
     }
 
     public void Respawn()
