@@ -113,6 +113,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Storm.cs" />
     <Compile Include="Assets\Scripts\EyeOfTheStorm.cs" />
+    <Compile Include="Assets\ToyBox\Scripts\Rotate.cs" />
+    <Compile Include="Assets\ToyBox\Scripts\FlipPad.cs" />
+    <Compile Include="Assets\ToyBox\Scripts\AniActivate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

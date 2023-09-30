@@ -27,7 +27,7 @@ public class GoldPickup : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            FindObjectOfType<GameManager>().AddGold(value);
+            FindObjectOfType<GameManager>().AddScore(value);
 
             Instantiate(pickupEffect, transform.position, transform.rotation);
 

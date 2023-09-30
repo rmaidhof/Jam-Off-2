@@ -12,6 +12,8 @@ public class Storm : MonoBehaviour
     public float pauseTime = 5f;
     public float minTravelDist = 10f;
     public float maxTravelDist = 20f;
+    public float xBound = 50f;
+    public float zBound = 50f;
     
 
     private GameObject Player;
@@ -50,10 +52,31 @@ public class Storm : MonoBehaviour
         oldPosition = transform.position;
         travelDist = Random.Range(minTravelDist, maxTravelDist);
         travelAngle = Random.Range(0f, 2*Mathf.PI);
-        
         newPosition = new Vector3(transform.position.x + travelDist * Mathf.Cos(travelAngle), 0, transform.position.z + travelDist * Mathf.Sin(travelAngle));
+        BoundaryCheck();
         moveDistance = Vector3.Distance(oldPosition, newPosition);
         moveTime = moveDistance / stormSpeed;
+    }
+
+    private void BoundaryCheck()
+    {
+        if (newPosition.x > xBound)
+        {
+            newPosition.x = xBound;
+        }
+        else if (newPosition.x < -xBound)
+        {
+            newPosition.x = -xBound;
+        }
+
+        if (newPosition.z > zBound)
+        {
+            newPosition.z = zBound;
+        }
+        else if (newPosition.z < -zBound)
+        {
+            newPosition.z = -zBound;
+        }
     }
     
     private void MoveStorm()

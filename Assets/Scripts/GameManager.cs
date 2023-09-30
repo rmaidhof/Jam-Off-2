@@ -8,10 +8,10 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
 
-    public int currentGold;
-    public TextMeshProUGUI goldText;
+    public int currentScore;
+    public TextMeshProUGUI scoreText;
     private AudioSource gameAudio;
-    public AudioClip gainGoldSound;
+    public AudioClip gainScoreSound;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +25,10 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void AddGold(int goldToAdd)
+    public void AddScore(int scoreToAdd)
     {
-        currentGold += goldToAdd;
-        goldText.text = "Gold: " + currentGold;
-        gameAudio.PlayOneShot(gainGoldSound, 0.5f);
+        currentScore += scoreToAdd;
+        scoreText.text = "Score: " + currentScore;
+        gameAudio.PlayOneShot(gainScoreSound, 0.5f);
     }
 }
