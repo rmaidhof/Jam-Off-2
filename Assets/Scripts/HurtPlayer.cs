@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HurtPlayer : MonoBehaviour
@@ -10,7 +11,7 @@ public class HurtPlayer : MonoBehaviour
     private Transform center;
     public bool bounceUp = false;
     private GameObject Player;
-
+    public bool destroyOnCol = false;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,11 @@ public class HurtPlayer : MonoBehaviour
             }
                       
             FindObjectOfType<HealthManager>().HurtPlayer(damageToGive, hitDirection);
+
+            if(destroyOnCol)
+            {
+                Destroy(this);
+            }
         }
     }
 }
