@@ -4,13 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
+    [SerializeField] Canvas gameOverCanvas;
+    [SerializeField] Canvas pauseMenuCanvas;
+
 
     public int maxHealth;
     public int currentHealth;
     public TextMeshProUGUI healthText;
+    public TextMeshProUGUI finalScoreText;
     public ThirdPersonController thePlayer;
     
 
@@ -34,6 +39,8 @@ public class HealthManager : MonoBehaviour
 
     private AudioSource playerAudio;
     public AudioClip deathSound;
+    public AudioClip hurtSound;
+    private GameManager gameManager;
 
 
     // Start is called before the first frame update
@@ -47,7 +54,10 @@ public class HealthManager : MonoBehaviour
         healthText.text = "Health: " + currentHealth + "/" + maxHealth;
 
         playerAudio = GetComponent<AudioSource>();
+        gameOverCanvas.enabled = false;
+        pauseMenuCanvas.enabled = false;
 
+        gameManager = GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -104,6 +114,8 @@ public class HealthManager : MonoBehaviour
             }
             else
             {
+                playerAudio.PlayOneShot(hurtSound, 0.5f);
+
                 thePlayer.KnockBack(direction);
                 invincibilityCounter = invincibilityLength;
                 playerRenderer.enabled = false;
@@ -118,6 +130,7 @@ public class HealthManager : MonoBehaviour
         if (invincibilityCounter <= 0)
         {
             currentHealth -= damage;
+
             if (currentHealth < 0)
             {
                 currentHealth = 0;
@@ -128,6 +141,7 @@ public class HealthManager : MonoBehaviour
             }
             else
             {
+                playerAudio.PlayOneShot(hurtSound, 0.5f);
                 invincibilityCounter = invincibilityLength;
                 playerRenderer.enabled = false;
                 flashCounter = flashLength;
@@ -157,15 +171,19 @@ public class HealthManager : MonoBehaviour
 
         yield return new WaitForSeconds(respawnLength);
 
-        isFadeToBlack = true;
+        //isFadeToBlack = true;
 
         yield return new WaitForSeconds(waitForFade);
 
-        isFadeToBlack = false;
-        isFadeFromBlack = true;
+        //isFadeToBlack = false;
+        //isFadeFromBlack = true;
 
         isRespawning = false;
 
+        HandleDeath();
+        //ReloadGame();
+
+        /*
         thePlayer.gameObject.SetActive(true);
         
         GameObject player = GameObject.Find("Player");
@@ -189,7 +207,7 @@ public class HealthManager : MonoBehaviour
         playerRenderer.enabled = false;
 
         flashCounter = flashLength;
-
+        */
     }
 
     public void HealPlayer(int healAmount)
@@ -206,5 +224,45 @@ public class HealthManager : MonoBehaviour
     public void SetSpawnPoint(Vector3 newPosition)
     {
         respawnPoint = newPosition;
+    }
+
+    public void ReloadGame()
+    {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+    }
+
+    public void HandleDeath()
+    {
+        Time.timeScale = 0;
+        gameOverCanvas.enabled = true;
+        //Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        //thePlayer.RotationSpeed = 0;
+        finalScoreText.text = "Final Score: " + gameManager.currentScore;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        pauseMenuCanvas.enabled = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+        pauseMenuCanvas.enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        
+
     }
 }

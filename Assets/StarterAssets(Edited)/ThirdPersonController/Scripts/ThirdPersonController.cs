@@ -106,12 +106,11 @@ namespace StarterAssets
 
         // Knockback:
         public float knockBackForce = 10f;
-        public AudioClip knockBackSound;
 
         //Other:
         public bool playerHasControl = true;
         private AudioSource playerAudio;
-
+        public HealthManager healthManager;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -180,6 +179,11 @@ namespace StarterAssets
             {
                 MoveAlt();
 
+            }
+
+            if (_input.pause)
+            {
+                healthManager.PauseGame();
             }
         }
 
@@ -494,7 +498,6 @@ namespace StarterAssets
             
             Vector3 moveDirection = new Vector3 (direction.x, 0, direction.y) * knockBackForce * Time.deltaTime;
             _controller.Move(moveDirection);
-            playerAudio.PlayOneShot(knockBackSound, 0.5f);
         }
 
     }

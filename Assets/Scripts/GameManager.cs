@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +11,10 @@ public class GameManager : MonoBehaviour
     public int currentScore;
     public TextMeshProUGUI scoreText;
     private AudioSource gameAudio;
-    public AudioClip gainScoreSound;
+    
+    public int scoreTimeScore = 1;
+    public float scoreTime = 1f;
+    private float scoreTimeCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +25,23 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        TimeScore();
+    }
+
+    private void TimeScore()
+    {
+        scoreTimeCount += Time.deltaTime;
+        if(scoreTimeCount >= scoreTime)
+        {
+            AddScore(scoreTimeScore);
+            scoreTimeCount = 0;
+        }
     }
 
     public void AddScore(int scoreToAdd)
     {
         currentScore += scoreToAdd;
         scoreText.text = "Score: " + currentScore;
-        gameAudio.PlayOneShot(gainScoreSound, 0.5f);
+        
     }
 }

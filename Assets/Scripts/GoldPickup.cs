@@ -10,11 +10,11 @@ public class GoldPickup : MonoBehaviour
 
     public GameObject pickupEffect;
     
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -28,7 +28,6 @@ public class GoldPickup : MonoBehaviour
         if(other.tag == "Player")
         {
             FindObjectOfType<GameManager>().AddScore(value);
-
             Instantiate(pickupEffect, transform.position, transform.rotation);
 
             Destroy(gameObject);

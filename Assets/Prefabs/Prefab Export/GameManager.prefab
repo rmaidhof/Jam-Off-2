@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1194b6f67e448e041a2d1a42bd3cf161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentGold: 0
-  goldText: {fileID: 0}
-  gainGoldSound: {fileID: 8300000, guid: 66852431e1babd74b828f9b901e038be, type: 3}
+  currentScore: 0
+  scoreText: {fileID: 0}
+  gainScoreSound: {fileID: 8300000, guid: 66852431e1babd74b828f9b901e038be, type: 3}
 --- !u!114 &4729280294779819901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d425c3d72eb03e949a99637a69e0eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 3
   currentHealth: 0
   healthText: {fileID: 0}
   thePlayer: {fileID: 0}
