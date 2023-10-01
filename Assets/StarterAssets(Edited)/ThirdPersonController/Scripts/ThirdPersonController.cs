@@ -492,11 +492,12 @@ namespace StarterAssets
             _verticalVelocity = velocity;
         }
 
-        public void KnockBack(Vector2 direction)
+        public void KnockBack(Vector3 direction)
         {
             //Debug.Log("direction: " + direction);
-            
-            Vector3 moveDirection = new Vector3 (direction.x, 0, direction.y) * knockBackForce * Time.deltaTime;
+
+            //Vector3 moveDirection = new Vector3 (direction.x, 0, direction.y) * knockBackForce * Time.deltaTime;
+            Vector3 moveDirection = direction * knockBackForce* Time.deltaTime;
             _controller.Move(moveDirection);
         }
 

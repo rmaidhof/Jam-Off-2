@@ -99,7 +99,7 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void HurtPlayer(int damage, Vector2 direction)
+    public void HurtPlayer(int damage, Vector3 direction)
     {
         if (invincibilityCounter <= 0)
         {
