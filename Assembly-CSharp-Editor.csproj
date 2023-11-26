@@ -56,24 +56,24 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIDefine.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\CustomEditorProperties.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\SoundDetectorEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAICombatTextManager.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIHandIKEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\AttractModifierEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAINeedsSystemEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\AnimationProfileExporter.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\ReactionObjectEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIAbilityEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIFactionManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\CustomEditorProperties.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIAnimatorGenerator.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIHandIKEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIAbilityEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIDefine.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\AttractModifierEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\AnimationProfileExporter.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIFactionManager.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\LayerMaskDrawer.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\TargetPositionModifierEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\ReactionObjectEditor.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Editor\LocationBasedDamageEditor.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAISetupManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\TargetPositionModifierEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAICombatTextManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAINeedsSystemEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
