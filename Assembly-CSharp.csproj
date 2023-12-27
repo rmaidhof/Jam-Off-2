@@ -63,6 +63,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\CoroutineAction.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\DodgeAction.cs" />
     <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\BloodSplatterManager.cs" />
+    <Compile Include="Assets\Scripts\EmeraldPlayerBridgeCustom.cs" />
     <Compile Include="Assets\Scripts\EyeOfTheStorm.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Base\AbilityData.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Melee\MeleeAbility.cs" />
@@ -219,7 +220,6 @@
     <Compile Include="Assets\Emerald AI\Scripts\Internal\VisibilityCheck.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Managers\EmeraldEventsManager.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Ground Projectile\GroundProjectile.cs" />
-    <Compile Include="Assets\Scripts\EmeraldPlayerBridgeCustom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Emerald AI\Demo\Demo Source\Credit\Credit.txt" />
