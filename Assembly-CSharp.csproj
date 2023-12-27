@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_24;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_MANAGED_UNITYTLS;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_WEBGL;TEXTCORE_1_0_OR_NEWER;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;EMERALD_AI_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_24;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_MANAGED_UNITYTLS;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_WEBGL;TEXTCORE_1_0_OR_NEWER;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;EMERALD_AI_PRESENT;EMERALD_AI_2024_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -56,177 +56,201 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\ReactionObject.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIInitializer.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIWaypointObject.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\BloodSplatterManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\ReactionObject.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldHealth.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Sound Profile\EmeraldSoundProfile.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Waypoint Objects\EmeraldWaypointObject.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\CoroutineAction.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\DodgeAction.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\BloodSplatterManager.cs" />
     <Compile Include="Assets\Scripts\EyeOfTheStorm.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Base\AbilityData.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Melee\MeleeAbility.cs" />
     <Compile Include="Assets\EzTornado\Scripts\PerlinNoiseMesh.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\AoE\AreaOfEffect.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\PickTargetTypes.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\InitializeCombatTextSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIObjectPool.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIEventsManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\RandomMovementAction.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldObjectPool.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\IFaction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIDetection.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\CombatTextSystem.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldItems.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\AttackClass.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldMovement.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\IAvoidable.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldDetection.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\BlockAction.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\ExampleActionUpdated.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\LayerAttribute.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\CombatTextSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\DisableProjectileObject.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldWeaponCollision.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\AnimationEventInitializer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\GoldPickup.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Enums\AttractModifierReactionTypes.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\NeedsSystemDisplay.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Enums\AttractModifierReactionTypes.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldDebugger.cs" />
     <Compile Include="Assets\Scripts\DestroyOnCollision.cs" />
     <Compile Include="Assets\Scripts\HurtPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\DamageAIByCollision.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\DamageAIByCollision.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Teleport\TeleportAbility.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\SwitchTargetAction.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\LocationBasedDamage.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\LocationBasedDamage.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\VisibilityCheck.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\UI\EmeraldAIHealthBar.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\MoveToMousePosition.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\ICombat.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldHealthBar.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\AnimationParentClass.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAITimedDespawn.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\TrailRendererHelper.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\TargetPositionModifier.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAICombatTextData.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldTimedDespawn.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\TargetPositionModifier.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldAnimation.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Text Data\EmeraldCombatTextData.cs" />
     <Compile Include="Assets\ToyBox\Scripts\FlipPad.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAICombatManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldOptimization.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Ground Projectile\GroundProjectileAbility.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\YesOrNo.cs" />
     <Compile Include="Assets\Scripts\HoverPad.cs" />
     <Compile Include="Assets\Scripts\MoveBackAndForth.cs" />
     <Compile Include="Assets\ToyBox\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\AnimationProfile.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Animation Profile\AnimationProfile.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Arrow Projectile\ArrowProjectile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\CameraShakeExample.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\ThirdPersonController\Scripts\ThirdPersonController.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\AttractModifier.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Base\EmeraldAbilityObject.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\AttractModifier.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\AoE\AreaOfEffectAbility.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Enums\TriggerTypes.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIDamageOverTime.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Enums\TriggerTypes.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldDamageOverTime.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\ExampleAction.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Bullet Projectile\BulletProjectileAbility.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\DamageAIByRaycast.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\TameAI.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Base\ActionObject.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIHandIK.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAINonAIDamage.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\EmeraldAnimationEventsClass.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\EmeraldCombatManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Base\ActionsClass.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Player\EmeraldGeneralTargetBridge.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\FireProjectile.cs" />
     <Compile Include="Assets\ToyBox\Scripts\AniActivate.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldEvents.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\RelationTypes.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\DrawIfAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\Storm.cs" />
     <Compile Include="Assets\Scripts\PlatformAttach.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIProjectile.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIBehaviors.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldUI.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldBehaviors.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIFactionData.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Character Controller\EmeraldAIHideMouse.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Character Controller\FlyCamera.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\SoundDetector.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldFactionData.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\AnimationStateTypes.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Bullet Projectile\BulletProjectile.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\FlyCamera.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\EmeraldSoundDetector.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\AISchedule.cs" />
     <Compile Include="Assets\Scripts\SimpleMove.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldSystem.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\LocationBasedDamageArea.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Character Controller\EmeraldAISmoothFollow.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\LocationBasedDamageArea.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\SmoothFollow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Enums\ThreatLevels.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\CameraShake.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIPlayerDamage.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\System\EmeraldAISystem.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Arrow Projectile\ArrowProjectileAbility.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldAPI.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\General Projectile\GeneralProjectileAbility.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Aeiral Projectile\AerialProjectile.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Player\TestPlayerBridge.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Enums\ThreatLevels.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\IDamageable.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\TagAttribute.cs" />
     <Compile Include="Assets\Scripts\BouncePad.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\DamageAIByAngle.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Player\FactionExtension.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\DrawIfRangeAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\MoveToMousePosition.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\SetCompanionFollower.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\RaycastHitAI.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldSounds.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\AttackPickTypes.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\ProjectileEffectsClass.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAILookAtController.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldInverseKinematics.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\FactionClass.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\StrafeAction.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Player\EmeraldPlayerBridge.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Aeiral Projectile\AerialProjectileAbility.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\StarterAssets(Edited)\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIAbility.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Player\EmeraldAIPlayerHealth.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\General Projectile\GeneralProjectile.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\CompareEnumWithRangeAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\DamageAIByExplosion.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\PlayAIsEmote.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\SummonedAIComponent.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\HandIKProfile.cs" />
+    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\DamageAIByExplosion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\WaypointPath.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Reaction.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Enums\ReactionTypes.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldCombat.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Reaction.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\EmoteAnimationClass.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Enums\ReactionTypes.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\AdvancedLineOfSight.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\SpawnCompanion.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAIProjectileTimeout.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Example Scripts\SpawnObjectEvent.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\AnimationClass.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\VisibilityCheckDelay.cs" />
-    <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\TopDownCharacterController.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Components\EmeraldAINeedsSystem.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\VisibilityCheck.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\EmeraldEventsManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Ground Projectile\GroundProjectile.cs" />
+    <Compile Include="Assets\Scripts\EmeraldPlayerBridgeCustom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Emerald AI\Demo\Demo Source\Credit\Credit.txt" />
-    <None Include="Assets\Emerald AI\Scripts\Shaders\Selection Shader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\Alien.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\EyeLash.shader" />
     <None Include="Assets\AddOns\MgFPS_Fireballer\Fireballer_ReadMe.txt" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Environment\Shaders\Vegetation.shader" />
     <None Include="Assets\Emerald AI\Scripts\Shaders\Emerald AI UI +1.shader" />
     <None Include="Assets\Tower Defence\Shaders\Double Side.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Environment\Shaders\GroundCover.shader" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Environment\Shaders\Terrain.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Emerald AI\Scripts\Shaders\Emerald AI Outline Shader.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\StarterAssets(Edited)\license.txt" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\EyeBallsHD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Spitter\AnimationClips\animations.txt" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Environment\Shaders\Stonework.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\EnergyCore.shader" />
     <None Include="Assets\Emerald AI\Scripts\Shaders\Emerald AI UI.shader" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\SculptedHair.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\ToonSkin.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\Emerald AI\Demo\Demo Source\Demo Models Source\Characters\Shaders\Dissolve.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -929,6 +953,9 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
     <Reference Include="Cinemachine">
       <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
@@ -958,6 +985,9 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>

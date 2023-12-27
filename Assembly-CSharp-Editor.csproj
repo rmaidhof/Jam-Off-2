@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_24;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_MANAGED_UNITYTLS;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_WEBGL;TEXTCORE_1_0_OR_NEWER;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;EMERALD_AI_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_24;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_MANAGED_UNITYTLS;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_WEBGL;TEXTCORE_1_0_OR_NEWER;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;EMERALD_AI_PRESENT;EMERALD_AI_2024_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -56,24 +56,46 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\SoundDetectorEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\CustomEditorProperties.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\Editor\DrawIfPropertyDrawer.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldDetectionEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Editor\EmeraldSoundDetectorEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldCombatEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\Editor\CustomEditorProperties.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIAnimatorGenerator.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIHandIKEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIAbilityEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIDefine.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\AttractModifierEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\AnimationProfileExporter.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAIFactionManager.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\LayerMaskDrawer.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Sound Detection\Scripts\Editor\ReactionObjectEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\LocationBasedDamageEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAISetupManager.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\TargetPositionModifierEditor.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAICombatTextManager.cs" />
-    <Compile Include="Assets\Emerald AI\Scripts\Editor\EmeraldAINeedsSystemEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Editor\EmeraldAnimatorGenerator.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldDebuggerEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldBehaviorsEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Sound Profile\Editor\EmeraldSoundProfileEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\Editor\DrawIfRangePropertyDrawer.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Editor\EmeraldAbilityObjectEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldItemsEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldUIEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldMovementEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Editor\EmeraldDefine.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\Editor\AnimationViewerManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldEventsEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\Editor\EmeraldWikiManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Editor\AttractModifierEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldHealthEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\Editor\LayerAttributeEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Animation Profile\Editor\AnimationProfileEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\Editor\EmeraldAIDuplicatorManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldWeaponCollisionEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\Editor\EmeraldFactionManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldOptimizationEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Editor\ActionObjectEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldSoundsEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Player\Editor\EmeraldGeneralTargetBridgeEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Editor\LayerMaskDrawer.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\Editor\ReactionObjectEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Player\Editor\FactionExtensionEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\Editor\CompareEnumWithRangePropertyDrawer.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\EmeraldInverseKinematicsEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\LocationBasedDamageEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\Editor\EmeraldSetupManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Editor\TargetPositionModifierEditor.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Managers\Editor\EmeraldCombatTextManager.cs" />
+    <Compile Include="Assets\Emerald AI\Scripts\Components\Required\Editor\EmeraldAnimationEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -838,6 +860,9 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
     <Reference Include="Cinemachine">
       <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
@@ -867,6 +892,9 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>

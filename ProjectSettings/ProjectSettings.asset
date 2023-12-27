@@ -784,7 +784,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    WebGL: EMERALD_AI_PRESENT
+    WebGL: EMERALD_AI_PRESENT;EMERALD_AI_2024_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

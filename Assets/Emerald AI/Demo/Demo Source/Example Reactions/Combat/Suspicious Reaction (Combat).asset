@@ -25,7 +25,7 @@ MonoBehaviour:
     ElementLineHeight: 1
   - ReactionType: 225
     IntValue1: 2
-    IntValue2: 1
+    IntValue2: 5
     StringValue: Is someone out there?!
     FloatValue: 1
     BoolValue: 1

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Fire
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - FireLayer
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
