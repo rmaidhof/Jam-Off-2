@@ -51,7 +51,7 @@ public class HealthManager : MonoBehaviour
 
         respawnPoint = thePlayer.transform.position;
 
-        healthText.text = "Health: " + currentHealth + "/" + maxHealth;
+        healthText.text = "Lives: " + currentHealth;
 
         playerAudio = GetComponent<AudioSource>();
         gameOverCanvas.enabled = false;

@@ -70,6 +70,7 @@
     <Compile Include="Assets\Asset Packs\EzTornado\Scripts\PerlinNoiseMesh.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\AoE\AreaOfEffect.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Internal\Enums\PickTargetTypes.cs" />
+    <Compile Include="Assets\Scripts\JumpAttack.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Demo\Demo Source\Scripts\InitializeCombatTextSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\RandomMovementAction.cs" />
@@ -149,6 +150,7 @@
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Managers\EmeraldCombatManager.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Base\ActionsClass.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Player\EmeraldGeneralTargetBridge.cs" />
+    <Compile Include="Assets\Scripts\GettingJumpedOn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\FireProjectile.cs" />
     <Compile Include="Assets\Asset Packs\ToyBox\Scripts\AniActivate.cs" />

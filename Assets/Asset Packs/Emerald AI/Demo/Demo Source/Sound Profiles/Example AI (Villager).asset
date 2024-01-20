@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Example AI (Villager)
   m_EditorClassIdentifier: 
   IdleSoundsFoldout: 0
-  FootstepSoundsFoldout: 1
+  FootstepSoundsFoldout: 0
   InteractSoundsFoldout: 0
   EquipAndUnequipSoundsFoldout: 0
-  AttackSoundsFoldout: 0
+  AttackSoundsFoldout: 1
   InjuredSoundsFoldout: 0
   BlockSoundsFoldout: 0
   DeathSoundsFoldout: 0

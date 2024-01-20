@@ -103,6 +103,8 @@ namespace StarterAssets
         private int _animIDMotionSpeed;
 
         // Added by Ryan:
+        [Header("Custom")]
+
 
         // Knockback:
         public float knockBackForce = 10f;

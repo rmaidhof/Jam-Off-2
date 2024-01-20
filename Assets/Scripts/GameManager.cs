@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int scoreToAdd)
     {
         currentScore += scoreToAdd;
-        scoreText.text = "Score: " + currentScore;
+        scoreText.text = "Coins: " + currentScore;
         
     }
 }
