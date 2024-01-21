@@ -72,7 +72,7 @@ namespace EmeraldAI
 
             //The code for damaging your character controller should go here.
 
-            healthManager.HurtPlayer(DamageAmount);
+            healthManager.HurtPlayer(DamageAmount, Target);
 
             OnTakeDamage.Invoke();
 

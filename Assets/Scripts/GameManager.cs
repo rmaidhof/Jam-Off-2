@@ -16,16 +16,22 @@ public class GameManager : MonoBehaviour
     public float scoreTime = 1f;
     private float scoreTimeCount = 0;
 
+    public bool coinsGiveHealth = true;
+    public int maxCoins = 20;
+    HealthManager healthManager;
+
     // Start is called before the first frame update
     void Start()
     {
         gameAudio = GetComponent<AudioSource>();
+        healthManager = GetComponent<HealthManager>();
+        UpdateScoreText();
     }
 
     // Update is called once per frame
     void Update()
     {
-        TimeScore();
+        //TimeScore();
     }
 
     private void TimeScore()
@@ -41,7 +47,25 @@ public class GameManager : MonoBehaviour
     public void AddScore(int scoreToAdd)
     {
         currentScore += scoreToAdd;
-        scoreText.text = "Coins: " + currentScore;
-        
+        if(coinsGiveHealth && currentScore >= maxCoins)
+        {
+            healthManager.HealPlayer(1);
+            currentScore = 0;
+        }
+        UpdateScoreText();
+
+    }
+
+    private void UpdateScoreText()
+    {
+        if(coinsGiveHealth)
+        {
+            scoreText.text = "Coins: " + currentScore + "/" + maxCoins;
+        }
+        else
+        {
+            scoreText.text = "Coins: " + currentScore;
+
+        }
     }
 }

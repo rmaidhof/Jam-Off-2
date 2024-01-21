@@ -13,6 +13,8 @@ public class HealthManager : MonoBehaviour
 
 
     public int maxHealth;
+    public int startHealth = 3;
+
     public int currentHealth;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI finalScoreText;
@@ -40,18 +42,19 @@ public class HealthManager : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip deathSound;
     public AudioClip hurtSound;
+    public GameObject healFX;
     private GameManager gameManager;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = startHealth;
+        UpdateHealthText();
         //thePlayer = FindObjectOfType<PlayerController>();
 
         respawnPoint = thePlayer.transform.position;
 
-        healthText.text = "Lives: " + currentHealth;
 
         playerAudio = GetComponent<AudioSource>();
         gameOverCanvas.enabled = false;
@@ -99,6 +102,20 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+
+    public void HurtPlayer(int damage, Transform damageSource)
+    {
+        Vector3 hitDirection;
+            
+        hitDirection = thePlayer.transform.position - damageSource.position;
+        Vector2 hitDirection2d = new Vector2(hitDirection.x, hitDirection.z);
+
+        hitDirection2d = hitDirection2d.normalized;
+        hitDirection = new Vector3(hitDirection2d.x, 0, hitDirection2d.y);
+        
+        HurtPlayer(damage, hitDirection);
+    }
+
     public void HurtPlayer(int damage, Vector3 direction)
     {
         if (invincibilityCounter <= 0)
@@ -121,7 +138,7 @@ public class HealthManager : MonoBehaviour
                 playerRenderer.enabled = false;
                 flashCounter = flashLength;
             }
-            healthText.text = "Health: " + currentHealth + "/" + maxHealth;
+            UpdateHealthText();
         }
     }
 
@@ -146,7 +163,7 @@ public class HealthManager : MonoBehaviour
                 playerRenderer.enabled = false;
                 flashCounter = flashLength;
             }
-            healthText.text = "Health: " + currentHealth + "/" + maxHealth;
+            UpdateHealthText();
         }
     }
 
@@ -218,7 +235,8 @@ public class HealthManager : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        healthText.text = "Health: " + currentHealth + "/" + maxHealth;
+        Instantiate(healFX, thePlayer.transform);
+        UpdateHealthText();
     }
 
     public void SetSpawnPoint(Vector3 newPosition)
@@ -263,6 +281,12 @@ public class HealthManager : MonoBehaviour
         pauseMenuCanvas.enabled = false;
         Cursor.lockState = CursorLockMode.Locked;
         
+
+    }
+
+    public void UpdateHealthText()
+    {
+        healthText.text = "Lives: " + currentHealth;
 
     }
 }

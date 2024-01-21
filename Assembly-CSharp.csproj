@@ -222,6 +222,11 @@
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Internal\VisibilityCheck.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Managers\EmeraldEventsManager.cs" />
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Ground Projectile\GroundProjectile.cs" />
+    <Compile Include="Assets\Asset Packs\SimpleCollectiblesPack\SimpleCollectibleScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerPickup.cs" />
+    <Compile Include="Assets\Scripts\GoldPickup2.cs" />
+    <Compile Include="Assets\Scripts\HealthPickup.cs" />
+    <Compile Include="Assets\Scripts\EnableBoxCollider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\Emerald AI\Demo\Demo Source\Credit\Credit.txt" />

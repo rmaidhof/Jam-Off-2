@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 879383893245861393}
   - component: {fileID: 1369314943}
-  - component: {fileID: 1369314946}
   - component: {fileID: 1697740276999159585}
   - component: {fileID: 8152740235911158282}
   - component: {fileID: 8823625151903722212}
+  - component: {fileID: 958626111356420577}
   m_Layer: 0
   m_Name: Gold Coin
   m_TagString: Untagged
@@ -59,21 +59,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1369314946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934080958726759853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4aaebc4662d40b4e83588cfbee67bfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 10
-  pickupEffect: {fileID: 1903675123540283888, guid: 01383a9088913554ab18aeae41f7bf77,
-    type: 3}
 --- !u!135 &1697740276999159585
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -196,6 +181,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &958626111356420577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934080958726759853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4603e02f0738a047831dd64b982552b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupEffect: {fileID: 1903675123540283888, guid: 01383a9088913554ab18aeae41f7bf77,
+    type: 3}
+  value: 1
 --- !u!1001 &5886382466860347651
 PrefabInstance:
   m_ObjectHideFlags: 0

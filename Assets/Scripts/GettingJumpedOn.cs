@@ -15,7 +15,6 @@ public class GettingJumpedOn : MonoBehaviour
     private AudioSource bounceAudio;
     public AudioClip bounceSound;
 
-    private BoxCollider boxCollider;
 
     public int damageAmount = 1;
 
@@ -26,7 +25,6 @@ public class GettingJumpedOn : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         playerController = Player.GetComponent<ThirdPersonController>();
         
-        StartCoroutine(EnableBoxCollider());
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,11 +41,5 @@ public class GettingJumpedOn : MonoBehaviour
     }
 
     //Enables box collider because emerald AI disables it when level is run
-    IEnumerator EnableBoxCollider()
-    {
-        boxCollider = GetComponent<BoxCollider>();
-        yield return new WaitForSeconds(0.1f);
-        boxCollider.enabled = true;
-        yield return null;
-    }
+    
 }
