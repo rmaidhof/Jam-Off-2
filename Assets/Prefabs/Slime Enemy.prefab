@@ -735,7 +735,7 @@ MonoBehaviour:
   IgnoredColliders: []
   CurrentObstruction: {fileID: 0}
   HeadTransform: {fileID: 6091243100743582000}
-  DetectionFrequency: 1
+  DetectionFrequency: 0.27
   DetectionLayerMask:
     serializedVersion: 2
     m_Bits: 128
