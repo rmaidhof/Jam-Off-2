@@ -30,7 +30,6 @@ public class HurtPlayer : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Hit Player");
             Vector3 hitDirection;
             if (bounceUp)
             {

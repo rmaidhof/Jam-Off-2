@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6096035559992802256}
   - component: {fileID: 6096035559992802258}
   - component: {fileID: 6096035559992802261}
+  - component: {fileID: 955497133}
   m_Layer: 0
   m_Name: Jumped On Part
   m_TagString: Untagged
@@ -159,6 +160,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &955497133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096035559992802271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e90bcee70b7d834cbadd4fae684dc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6096368819798596244
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,10 +656,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6097773333908268004}
-  m_LocalRotation: {x: 0, y: 0.99940765, z: 0, w: 0.034415323}
+  m_LocalRotation: {x: -0, y: -0.99940777, z: 0, w: -0.034410965}
   m_LocalPosition: {x: 0.37397838, y: 0.00000023841858, z: 5.8736515}
-  m_LocalScale: {x: 1.000003, y: 1, z: 1.000003}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.0000032, y: 1, z: 1.0000032}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6095351215256801066}
   - {fileID: 6095063806596412386}
@@ -734,7 +747,7 @@ MonoBehaviour:
   ObstructionDetectionUpdateTimer: 0
   ObstructionSeconds: 1.5
   StartingDetectionRadius: 0
-  DetectionRadius: 18
+  DetectionRadius: 6
   StartingChaseDistance: 0
   FieldOfViewAngle: 180
   StartingFieldOfViewAngle: 0
@@ -1302,5 +1315,5 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   HideSettingsFoldout: 0
-  GeneralEventsFoldout: 0
-  CombatEventsFoldout: 1
+  GeneralEventsFoldout: 1
+  CombatEventsFoldout: 0

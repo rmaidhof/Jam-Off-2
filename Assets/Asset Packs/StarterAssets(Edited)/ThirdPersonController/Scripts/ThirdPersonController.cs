@@ -114,6 +114,12 @@ namespace StarterAssets
         private AudioSource playerAudio;
         public HealthManager healthManager;
 
+        //Death Barrier:
+        public bool deathFloor = true;
+        public float lowerLimit = -20f;
+
+       
+
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
 #endif
@@ -167,7 +173,7 @@ namespace StarterAssets
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
             playerAudio = GetComponent<AudioSource>();
-
+            healthManager = FindObjectOfType<HealthManager>();
         }
 
         private void Update()
@@ -186,6 +192,12 @@ namespace StarterAssets
             if (_input.pause)
             {
                 healthManager.PauseGame();
+            }
+
+            //Death Barrier:
+            if(deathFloor && transform.position.y < lowerLimit)
+            {
+                healthManager.HurtPlayer(healthManager.currentHealth);
             }
         }
 

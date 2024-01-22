@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Slime Sound Profile
   m_EditorClassIdentifier: 
   IdleSoundsFoldout: 0
-  FootstepSoundsFoldout: 0
+  FootstepSoundsFoldout: 1
   InteractSoundsFoldout: 0
   EquipAndUnequipSoundsFoldout: 0
-  AttackSoundsFoldout: 1
+  AttackSoundsFoldout: 0
   InjuredSoundsFoldout: 0
   BlockSoundsFoldout: 0
   DeathSoundsFoldout: 1
@@ -36,11 +36,12 @@ MonoBehaviour:
   WarningSounds: []
   DeathSounds:
   - {fileID: 8300000, guid: 361b3ddf4689f7c46b4b9b5e2f4c3d31, type: 3}
-  FootStepSounds: []
+  FootStepSounds:
+  - {fileID: 0}
   BlockingSounds: []
   IdleVolume: 1
-  WalkFootstepVolume: 0.1
-  RunFootstepVolume: 0.1
+  WalkFootstepVolume: 1
+  RunFootstepVolume: 1
   BlockVolume: 0.65
   InjuredSoundOdds: 100
   InjuredVolume: 1

@@ -46,9 +46,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1194b6f67e448e041a2d1a42bd3cf161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   currentScore: 0
   scoreText: {fileID: 0}
-  gainScoreSound: {fileID: 8300000, guid: 66852431e1babd74b828f9b901e038be, type: 3}
+  coinsGiveHealth: 1
+  maxCoins: 20
+  lowGravity: 0
+  gravityMultiplier: 0.5
+  tallEnemies: 0
+  enemyHeightMultiplier: 4
+  negativeCoins: 0
 --- !u!114 &4729280294779819901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,12 +68,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d425c3d72eb03e949a99637a69e0eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 0
+  gameOverCanvas: {fileID: 0}
+  pauseMenuCanvas: {fileID: 0}
+  maxHealth: 100
+  startHealth: 3
+  currentHealth: 3
   healthText: {fileID: 0}
+  finalScoreText: {fileID: 0}
   thePlayer: {fileID: 0}
   invincibilityLength: 1
-  playerRenderer: {fileID: 0}
   flashLength: 0.1
   respawnLength: 2
   deathEffect: {fileID: 3213004462922287445, guid: 7a448ae1f24106645827081620dd576d,
@@ -75,6 +85,8 @@ MonoBehaviour:
   fadeSpeed: 2
   waitForFade: 1
   deathSound: {fileID: 8300000, guid: 7bb77addc1c799648b8c7bfd09aa71af, type: 3}
+  hurtSound: {fileID: 8300000, guid: 46b70a75d62459a4fab909c0af0fdef1, type: 3}
+  healFX: {fileID: 9041497727549288234, guid: 54f42dbc19c2a134a94b09436a32634f, type: 3}
 --- !u!82 &4729280294779819900
 AudioSource:
   m_ObjectHideFlags: 0

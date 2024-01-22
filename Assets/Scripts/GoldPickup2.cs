@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,19 @@ public class GoldPickup2 : PlayerPickup
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        GameManager.onNegativeCoins += TurnNegative;
+        GameManager.onPositiveCoins += TurnPositive;
+
+    }
+
+    private void TurnNegative()
+    {
+        value = -Mathf.Abs(value);
+    }
+
+    private void TurnPositive()
+    {
+        value = Mathf.Abs(value);
     }
 
     public override void PickupBonus()

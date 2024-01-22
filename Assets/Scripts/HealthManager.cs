@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    [SerializeField] Canvas gameOverCanvas;
-    [SerializeField] Canvas pauseMenuCanvas;
+    [SerializeField] GameObject gameOverCanvas;
+    [SerializeField] GameObject pauseMenuCanvas;
 
 
     public int maxHealth;
@@ -24,7 +24,7 @@ public class HealthManager : MonoBehaviour
     public float invincibilityLength;
     private float invincibilityCounter;
 
-    public Renderer playerRenderer;
+    //public Renderer playerRenderer;
     private float flashCounter;
     public float flashLength = 0.1f;
 
@@ -45,6 +45,43 @@ public class HealthManager : MonoBehaviour
     public GameObject healFX;
     private GameManager gameManager;
 
+    public static HealthManager instance;
+
+
+    private void Awake()
+    {
+
+        
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+
+
+        thePlayer = FindObjectOfType<ThirdPersonController>();
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        if (thePlayer == null)
+        {
+
+            thePlayer = FindObjectOfType<ThirdPersonController>();
+
+        }
+
+        gameOverCanvas.SetActive(false);
+        pauseMenuCanvas.SetActive(false);
+
+
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -57,8 +94,7 @@ public class HealthManager : MonoBehaviour
 
 
         playerAudio = GetComponent<AudioSource>();
-        gameOverCanvas.enabled = false;
-        pauseMenuCanvas.enabled = false;
+
 
         gameManager = GetComponent<GameManager>();
     }
@@ -73,13 +109,13 @@ public class HealthManager : MonoBehaviour
             flashCounter -= Time.deltaTime;
             if(flashCounter <= 0)
             {
-                playerRenderer.enabled = !playerRenderer.enabled;
+                //playerRenderer.enabled = !playerRenderer.enabled;
                 flashCounter = flashLength;
             }
 
             if(invincibilityCounter <= 0)
             {
-                playerRenderer.enabled = true;
+                //playerRenderer.enabled = true;
             }
         }
 
@@ -135,7 +171,7 @@ public class HealthManager : MonoBehaviour
 
                 thePlayer.KnockBack(direction);
                 invincibilityCounter = invincibilityLength;
-                playerRenderer.enabled = false;
+                //playerRenderer.enabled = false;
                 flashCounter = flashLength;
             }
             UpdateHealthText();
@@ -160,7 +196,7 @@ public class HealthManager : MonoBehaviour
             {
                 playerAudio.PlayOneShot(hurtSound, 0.5f);
                 invincibilityCounter = invincibilityLength;
-                playerRenderer.enabled = false;
+                //playerRenderer.enabled = false;
                 flashCounter = flashLength;
             }
             UpdateHealthText();
@@ -246,8 +282,10 @@ public class HealthManager : MonoBehaviour
 
     public void ReloadGame()
     {
+        Debug.Log("reload game called");
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         
     }
@@ -255,7 +293,7 @@ public class HealthManager : MonoBehaviour
     public void HandleDeath()
     {
         Time.timeScale = 0;
-        gameOverCanvas.enabled = true;
+        gameOverCanvas.SetActive(true);
         //Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -269,7 +307,7 @@ public class HealthManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
-        pauseMenuCanvas.enabled = true;
+        pauseMenuCanvas.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
@@ -278,7 +316,7 @@ public class HealthManager : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
-        pauseMenuCanvas.enabled = false;
+        pauseMenuCanvas.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         
 
