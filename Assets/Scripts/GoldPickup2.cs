@@ -7,14 +7,28 @@ using static UnityEngine.Rendering.DebugUI;
 public class GoldPickup2 : PlayerPickup
 {
     public int value;
-    private GameManager gameManager; 
+    public GameManager gameManager; 
+    public HealthManager healthManager;
 
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         GameManager.onNegativeCoins += TurnNegative;
         GameManager.onPositiveCoins += TurnPositive;
+        healthManager = FindObjectOfType<HealthManager>();
+        StartCoroutine(findGM());
 
+    }
+    private void Update()
+    {
+
+    }
+
+    IEnumerator findGM()
+    {
+        yield return new WaitForSeconds(0.1f);
+        gameManager = FindObjectOfType<GameManager>();
+        yield return null;
     }
 
     private void TurnNegative()

@@ -8,6 +8,8 @@ public class MovingPlatform : MonoBehaviour
     private WaypointPath _waypointPath;
 
     [SerializeField]
+    private float _timeToWaypoint = 2;
+
     private float _speed;
 
     private int _targetWaypointIndex;
@@ -15,7 +17,6 @@ public class MovingPlatform : MonoBehaviour
     private Transform _previousWaypoint;
     private Transform _targetWaypoint;
 
-    private float _timeToWaypoint;
     private float _elapsedTime;
     
     
@@ -50,6 +51,6 @@ public class MovingPlatform : MonoBehaviour
         _elapsedTime = 0;
 
         float distanceToWaypoint = Vector3.Distance(_previousWaypoint.position, _targetWaypoint.position);
-        _timeToWaypoint = distanceToWaypoint / _speed;
+        _speed = distanceToWaypoint / _timeToWaypoint;
     }
 }

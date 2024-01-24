@@ -85,6 +85,11 @@ public class GameManager : MonoBehaviour
     public delegate void PositiveCoinsEvent();
     public static event PositiveCoinsEvent onPositiveCoins;
 
+    [Header("Keys")]
+    public bool blueKeyAcquired = false;
+    public bool redKeyAcquired = false;
+    public bool greenKeyAcquired = false;
+
     private void Awake()
     {
         if(instance != null)
@@ -110,9 +115,7 @@ public class GameManager : MonoBehaviour
     {
         if(playerController == null)
         {
-            
             playerController = FindObjectOfType<ThirdPersonController>();
-
         }
 
         UpdateScoreText();
@@ -125,20 +128,16 @@ public class GameManager : MonoBehaviour
     {
         gameAudio = GetComponent<AudioSource>();
         healthManager = GetComponent<HealthManager>();
-        
-
-        
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        /*if (Input.GetKeyDown(KeyCode.L))
         {
             NegativeCoins = !NegativeCoins;
         }
-        
+        */
 
     }
 

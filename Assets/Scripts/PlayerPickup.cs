@@ -6,7 +6,7 @@ public abstract class PlayerPickup : MonoBehaviour
 {
 
     public GameObject pickupEffect;
-
+    
 
     private void OnTriggerEnter(Collider other)
     {

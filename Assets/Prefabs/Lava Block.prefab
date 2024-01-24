@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6925506945878462669}
   - component: {fileID: 6925506945878462668}
   - component: {fileID: 6925506945878462671}
+  - component: {fileID: 1254528233}
   m_Layer: 0
   m_Name: Lava Block
   m_TagString: Untagged
@@ -28,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6925506945884675323}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.888165, y: 2.9754367, z: -16.619326}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6835436, y: 1, z: 1.7025174}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,6 +115,7 @@ MonoBehaviour:
   damageToGive: 1
   centerPoint: {fileID: 0}
   bounceUp: 1
+  destroyOnCol: 0
 --- !u!65 &6925506945878462671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127,3 +129,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8, y: 8.840037, z: 8}
   m_Center: {x: 0, y: 0.42001998, z: 0}
+--- !u!114 &1254528233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925506945884675323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea51a85bcc006a418fd469c1f4c3caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceVelocity: 9
+  bounceSound: {fileID: 0}

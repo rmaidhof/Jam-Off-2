@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 6181852488267042811}
   - component: {fileID: 6181852488267042804}
   - component: {fileID: 6181852488267042807}
+  - component: {fileID: 85323686247983649}
   m_Layer: 6
   m_Name: Slime Enemy
   m_TagString: Enemy
@@ -658,7 +659,7 @@ Transform:
   m_GameObject: {fileID: 6097773333908268004}
   m_LocalRotation: {x: -0, y: -0.99940777, z: 0, w: -0.034410965}
   m_LocalPosition: {x: 0.37397838, y: 0.00000023841858, z: 5.8736515}
-  m_LocalScale: {x: 1.0000032, y: 1, z: 1.0000032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6095351215256801066}
@@ -713,6 +714,7 @@ MonoBehaviour:
   CurrentAnimationState: 2
   Type1AttackEnumAnimations:
   - Attack01
+  - Attack01
   Type2AttackEnumAnimations: []
   Type1AttackBlankOptions:
   - No Type 1 Attack Animations
@@ -747,7 +749,7 @@ MonoBehaviour:
   ObstructionDetectionUpdateTimer: 0
   ObstructionSeconds: 1.5
   StartingDetectionRadius: 0
-  DetectionRadius: 6
+  DetectionRadius: 10
   StartingChaseDistance: 0
   FieldOfViewAngle: 180
   StartingFieldOfViewAngle: 0
@@ -904,7 +906,7 @@ MonoBehaviour:
   StayNearStartingArea: 0
   BehaviorState: Non Combat
   HideSettingsFoldout: 0
-  BehaviorSettingsFoldout: 1
+  BehaviorSettingsFoldout: 0
   CustomSettingsFoldout: 0
 --- !u!114 &6181852488267042814
 MonoBehaviour:
@@ -922,7 +924,7 @@ MonoBehaviour:
   DistanceFromFollower: 0
   CalculatePathSeconds: 1
   DefaultMovementPaused: 0
-  WanderType: 0
+  WanderType: 2
   WaypointType: 2
   MovementType: 1
   StartingMovementState: 1
@@ -969,7 +971,7 @@ MonoBehaviour:
   SingleDestination: {x: 0, y: 0, z: 0}
   StartingDestination: {x: 0, y: 0, z: 0}
   m_WaypointObject: {fileID: 0}
-  WanderRadius: 25
+  WanderRadius: 5
   DynamicWanderLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -980,7 +982,7 @@ MonoBehaviour:
   ReturningToStartInProgress: 0
   AIAgentActive: 0
   HideSettingsFoldout: 0
-  WanderFoldout: 0
+  WanderFoldout: 1
   WaypointsFoldout: 0
   WaypointsListFoldout: 0
   BackupFoldout: 0
@@ -1287,10 +1289,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: AddScore
-        m_Mode: 3
+      - m_Target: {fileID: 85323686247983649}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: addScore
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1316,4 +1318,17 @@ MonoBehaviour:
       m_Calls: []
   HideSettingsFoldout: 0
   GeneralEventsFoldout: 1
-  CombatEventsFoldout: 0
+  CombatEventsFoldout: 1
+--- !u!114 &85323686247983649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097773333908268004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0e737fafca79842a6f04ff7010d02d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 1

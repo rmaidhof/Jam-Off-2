@@ -22,9 +22,9 @@ public class HealthManager : MonoBehaviour
     
 
     public float invincibilityLength;
-    private float invincibilityCounter;
+    public float invincibilityCounter;
 
-    //public Renderer playerRenderer;
+    public Renderer[] playerRenderers;
     private float flashCounter;
     public float flashLength = 0.1f;
 
@@ -50,8 +50,7 @@ public class HealthManager : MonoBehaviour
 
     private void Awake()
     {
-
-        
+                
         if (instance != null)
         {
             Destroy(gameObject);
@@ -62,9 +61,6 @@ public class HealthManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         SceneManager.sceneLoaded += OnSceneLoaded;
-
-
-
         thePlayer = FindObjectOfType<ThirdPersonController>();
     }
 
@@ -72,30 +68,24 @@ public class HealthManager : MonoBehaviour
     {
         if (thePlayer == null)
         {
-
             thePlayer = FindObjectOfType<ThirdPersonController>();
-
         }
 
         gameOverCanvas.SetActive(false);
         pauseMenuCanvas.SetActive(false);
+        currentHealth = startHealth;
+        UpdateHealthText();
 
+        respawnPoint = thePlayer.transform.position;
+        playerRenderers = thePlayer.GetComponentsInChildren<Renderer>();
+        invincibilityCounter = 0;
 
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = startHealth;
-        UpdateHealthText();
-        //thePlayer = FindObjectOfType<PlayerController>();
-
-        respawnPoint = thePlayer.transform.position;
-
-
         playerAudio = GetComponent<AudioSource>();
-
-
         gameManager = GetComponent<GameManager>();
     }
 
@@ -109,13 +99,21 @@ public class HealthManager : MonoBehaviour
             flashCounter -= Time.deltaTime;
             if(flashCounter <= 0)
             {
-                //playerRenderer.enabled = !playerRenderer.enabled;
+                foreach(Renderer playerRenderer in playerRenderers)
+                {
+                    playerRenderer.enabled = !playerRenderer.enabled;
+
+                }
                 flashCounter = flashLength;
             }
 
             if(invincibilityCounter <= 0)
             {
-                //playerRenderer.enabled = true;
+                foreach(Renderer playerRenderer in playerRenderers)
+                {
+                    playerRenderer.enabled = true;
+
+                }
             }
         }
 
