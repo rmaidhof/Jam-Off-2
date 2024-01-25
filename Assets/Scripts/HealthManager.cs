@@ -10,6 +10,7 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField] GameObject gameOverCanvas;
     [SerializeField] GameObject pauseMenuCanvas;
+    [SerializeField] GameObject victoryMenuCanvas;
 
 
     public int maxHealth;
@@ -73,18 +74,26 @@ public class HealthManager : MonoBehaviour
 
         gameOverCanvas.SetActive(false);
         pauseMenuCanvas.SetActive(false);
-        currentHealth = startHealth;
+        victoryMenuCanvas.SetActive(false);
+
         UpdateHealthText();
 
         respawnPoint = thePlayer.transform.position;
         playerRenderers = thePlayer.GetComponentsInChildren<Renderer>();
         invincibilityCounter = 0;
+        if(currentHealth <=0)
+        {
+            currentHealth = startHealth;
+
+        }
 
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = startHealth;
+
         playerAudio = GetComponent<AudioSource>();
         gameManager = GetComponent<GameManager>();
     }
@@ -284,7 +293,16 @@ public class HealthManager : MonoBehaviour
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameManager.currentScore = 0;
+        gameManager.redKeyAcquired = false;
+        gameManager.blueKeyAcquired = false;
+        gameManager.greenKeyAcquired = false;
+        gameManager.LowGravity = false;
+        gameManager.TallEnemies = false;
+        gameManager.NegativeCoins = false;
+
+        SceneManager.LoadScene(0);
+        currentHealth = startHealth;
         
     }
 
@@ -292,10 +310,8 @@ public class HealthManager : MonoBehaviour
     {
         Time.timeScale = 0;
         gameOverCanvas.SetActive(true);
-        //Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        //thePlayer.RotationSpeed = 0;
         finalScoreText.text = "Final Score: " + gameManager.currentScore;
     }
     public void QuitGame()
@@ -324,5 +340,13 @@ public class HealthManager : MonoBehaviour
     {
         healthText.text = "Lives: " + currentHealth;
 
+    }
+
+    public void GameVictory()
+    {
+        Time.timeScale = 0;
+        victoryMenuCanvas.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

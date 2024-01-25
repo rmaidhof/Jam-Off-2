@@ -90,6 +90,8 @@ public class GameManager : MonoBehaviour
     public bool redKeyAcquired = false;
     public bool greenKeyAcquired = false;
 
+    public GameObject whitePortal;
+
     private void Awake()
     {
         if(instance != null)
@@ -120,7 +122,28 @@ public class GameManager : MonoBehaviour
 
         UpdateScoreText();
         UpdateGravity();
+        UpdateEnemies();
+        StartCoroutine(updateCoinsDelayed());
 
+        whitePortal = GameObject.FindGameObjectWithTag("White portal");
+        if(whitePortal != null)
+        {
+            if (redKeyAcquired && greenKeyAcquired && blueKeyAcquired)
+            {
+                whitePortal.SetActive(true);
+            }
+            else
+            {
+                whitePortal.SetActive(false);
+            }
+        }
+    }
+
+    IEnumerator updateCoinsDelayed()
+    {
+        yield return new WaitForSeconds(0.2f);
+        UpdateCoins();
+        yield return null;
     }
 
     // Start is called before the first frame update
@@ -128,28 +151,29 @@ public class GameManager : MonoBehaviour
     {
         gameAudio = GetComponent<AudioSource>();
         healthManager = GetComponent<HealthManager>();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.L))
-        {
-            NegativeCoins = !NegativeCoins;
-        }
-        */
+        
 
     }
 
     private void UpdateCoins()
     {
-        if (NegativeCoins)
+        if(onNegativeCoins != null)
         {
-            onNegativeCoins();
-        }
-        else
-        {
-            onPositiveCoins();
+            if (NegativeCoins)
+            {
+                onNegativeCoins();
+            }
+            else
+            {
+                onPositiveCoins();
+            }
         }
     }
 

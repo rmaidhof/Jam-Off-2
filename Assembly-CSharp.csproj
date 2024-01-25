@@ -240,6 +240,9 @@
     <Compile Include="Assets\Asset Packs\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Ground Projectile\GroundProjectile.cs" />
     <Compile Include="Assets\Scripts\KeyPickup.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\TurnOffWithKey.cs" />
+    <Compile Include="Assets\TurnOnWithKeys.cs" />
+    <Compile Include="Assets\Fridge.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\Emerald AI\Demo\Demo Source\Credit\Credit.txt" />

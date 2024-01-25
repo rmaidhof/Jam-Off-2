@@ -9,6 +9,11 @@ public class GoldPickup2 : PlayerPickup
     public int value;
     public GameManager gameManager; 
     public HealthManager healthManager;
+    public GameObject positivePickupFX;
+    public GameObject negativePickupFX;
+    public Material positiveMat;
+    public Material negativeMat;
+    public MeshRenderer coinMesh;
 
     private void Start()
     {
@@ -34,11 +39,21 @@ public class GoldPickup2 : PlayerPickup
     private void TurnNegative()
     {
         value = -Mathf.Abs(value);
+        pickupEffect = negativePickupFX;
+        if (coinMesh != null)
+        {
+            coinMesh.material = negativeMat;
+        }
     }
 
     private void TurnPositive()
     {
         value = Mathf.Abs(value);
+        pickupEffect = positivePickupFX;
+        if(coinMesh != null)
+        {
+            coinMesh.material = positiveMat;
+        }
     }
 
     public override void PickupBonus()

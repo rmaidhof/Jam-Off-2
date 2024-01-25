@@ -1,6 +1,7 @@
 ﻿ using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -197,7 +198,12 @@ namespace StarterAssets
             //Death Barrier:
             if(deathFloor && transform.position.y < lowerLimit)
             {
-                healthManager.HurtPlayer(healthManager.currentHealth);
+                healthManager.HurtPlayer(1);
+                if(healthManager.currentHealth > 0)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+
             }
         }
 

@@ -714,7 +714,6 @@ MonoBehaviour:
   CurrentAnimationState: 2
   Type1AttackEnumAnimations:
   - Attack01
-  - Attack01
   Type2AttackEnumAnimations: []
   Type1AttackBlankOptions:
   - No Type 1 Attack Animations
@@ -751,7 +750,7 @@ MonoBehaviour:
   StartingDetectionRadius: 0
   DetectionRadius: 10
   StartingChaseDistance: 0
-  FieldOfViewAngle: 180
+  FieldOfViewAngle: 263
   StartingFieldOfViewAngle: 0
   CurrentDetectionState: 1
   PickTargetType: 0
@@ -1332,3 +1331,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 1
+  gameManager: {fileID: 0}

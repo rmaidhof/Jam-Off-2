@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7662409520643686163}
   - component: {fileID: 7662409520643686164}
   - component: {fileID: 7662409520643686162}
+  - component: {fileID: 4414913863765256788}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -59,8 +60,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab99b735302ef7c4a90b2dbc5662bc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Test Area
+  sceneName: Level 1
   delay: 0
+--- !u!114 &4414913863765256788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662409520643686165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a54c92e2023ac4da483bf4e8332426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  red: 0
+  green: 0
+  blue: 1
 --- !u!1001 &7662409520424621614
 PrefabInstance:
   m_ObjectHideFlags: 0

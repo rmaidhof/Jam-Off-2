@@ -12,8 +12,6 @@ public class KeyPickup : PlayerPickup
     public bool lowGravity;
     public bool tallEnemies;
     public bool negativeCoins;
-    public TextMeshProUGUI keyAcquiredText;
-    public TextMeshProUGUI ruleText;
     public PlayerInput playerInput;
     public HealthManager healthManager;
 
@@ -22,6 +20,9 @@ public class KeyPickup : PlayerPickup
     public bool blueKey = false;
     public bool redKey = false;
     public bool greenKey = false;
+
+    public delegate void ruleChange();
+    public static event ruleChange onRuleChange;
 
     private void Start()
     {
@@ -51,12 +52,9 @@ public class KeyPickup : PlayerPickup
             gameManager.greenKeyAcquired = true;
         }
 
-
-        keyAcquiredText.enabled = true;
-
-        ruleText.enabled = true;
         playerInput.enabled = false;
         healthManager.invincibilityCounter = 10;
+        onRuleChange();
     }
 
     IEnumerator findGM()

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal.Internal;
 using UnityEngine.SceneManagement;
 
 
@@ -15,6 +16,8 @@ public class UICanvas : MonoBehaviour
     public TextMeshProUGUI lowGravity;
     public TextMeshProUGUI tallEnemies;
     public TextMeshProUGUI negativeCoins;
+
+    public TextMeshProUGUI keyAcquired;
 
     public float delay = 2f;
     
@@ -58,6 +61,25 @@ public class UICanvas : MonoBehaviour
         }
         StartCoroutine(disableRulesText());
 
+        KeyPickup.onRuleChange += ruleChangeText;
+    }
+
+    public void ruleChangeText()
+    {
+        keyAcquired.enabled = true;
+        
+        if (gameManager.LowGravity)
+        {
+            lowGravity.enabled = true;
+        }
+        if (gameManager.TallEnemies)
+        {
+            tallEnemies.enabled = true;
+        }
+        if (gameManager.NegativeCoins)
+        {
+            negativeCoins.enabled = true;
+        }
     }
 
     IEnumerator disableRulesText()

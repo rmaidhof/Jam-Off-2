@@ -1249,7 +1249,7 @@ MonoBehaviour:
   StartingDetectionRadius: 0
   DetectionRadius: 18
   StartingChaseDistance: 0
-  FieldOfViewAngle: 180
+  FieldOfViewAngle: 270
   StartingFieldOfViewAngle: 0
   CurrentDetectionState: 1
   PickTargetType: 0
