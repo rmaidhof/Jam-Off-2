@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public bool coinsGiveHealth = true;
     public int maxCoins = 20;
     HealthManager healthManager;
+    public UICanvas UI;
 
     [Header("Rules")]
 
@@ -151,7 +152,7 @@ public class GameManager : MonoBehaviour
     {
         gameAudio = GetComponent<AudioSource>();
         healthManager = GetComponent<HealthManager>();
-
+        UI = FindObjectOfType<UICanvas>();
         
     }
 
@@ -231,13 +232,17 @@ public class GameManager : MonoBehaviour
         }
         UpdateScoreText();
 
+        if(UI.playedTutorialCoins == false){
+            UI.playTutorial(UI.tutorialCoins);
+            UI.playedTutorialCoins = true;
+        }
     }
 
     private void UpdateScoreText()
     {
         if(coinsGiveHealth)
         {
-            scoreText.text = "Coins: " + currentScore + "/" + maxCoins;
+            scoreText.text = currentScore + "/" + maxCoins;
         }
         else
         {

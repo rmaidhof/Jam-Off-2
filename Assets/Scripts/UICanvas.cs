@@ -20,8 +20,22 @@ public class UICanvas : MonoBehaviour
     public TextMeshProUGUI keyAcquired;
 
     public float delay = 2f;
+    public float tutorialDelay = 5f;
     
     public static UICanvas Instance;
+
+    public GameObject tutorialCoins;
+    public GameObject tutorialJumpOnEnemies;
+    public GameObject tutorialKeys;
+    public GameObject tutorialMove;
+
+
+    public bool playedTutorialCoins = false;
+    public bool playedTutorialJump = false;
+    public bool playedTutorialKeys = false;
+    public bool playedTutorialMove = false;
+
+
     private void Awake()
     {
         if(Instance != null)
@@ -37,8 +51,12 @@ public class UICanvas : MonoBehaviour
 
         gameManager = FindObjectOfType<GameManager>();
     }
+    private void Start()
+    {
+        playTutorial(tutorialMove);
+        playedTutorialMove = true;
+    }
 
-    
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
@@ -80,6 +98,12 @@ public class UICanvas : MonoBehaviour
         {
             negativeCoins.enabled = true;
         }
+
+        if(playedTutorialKeys == false)
+        {
+            playTutorial(tutorialKeys);
+            playedTutorialKeys = true;
+        }
     }
 
     IEnumerator disableRulesText()
@@ -90,4 +114,27 @@ public class UICanvas : MonoBehaviour
         negativeCoins.enabled = false;
         yield return null;
     }
+
+    public void playTutorial( GameObject tutorial)
+    {
+        tutorialCoins.SetActive(false);
+        tutorialJumpOnEnemies.SetActive(false);
+        tutorialKeys.SetActive(false);
+        tutorialMove.SetActive(false);
+
+
+        tutorial.SetActive(true);
+        StartCoroutine(disableTutorial(tutorial));
+        Debug.Log("played tutorial");
+    }
+
+    IEnumerator disableTutorial(GameObject tutorial)
+    {
+        yield return new WaitForSeconds(tutorialDelay);
+        tutorial.SetActive(false);
+
+        yield return null;
+    }
+
+
 }

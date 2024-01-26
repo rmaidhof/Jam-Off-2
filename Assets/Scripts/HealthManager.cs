@@ -338,7 +338,7 @@ public class HealthManager : MonoBehaviour
 
     public void UpdateHealthText()
     {
-        healthText.text = "Lives: " + currentHealth;
+        healthText.text = currentHealth.ToString();
 
     }
 
